@@ -2,6 +2,7 @@
 
 const Users = require('../models/usersSchema');
 const basic = require('../middleware/basic')
+const bcrypt = require('bcrypt');
 
 // ==================== EXPRESS ==================== //
 const express = require('express');
@@ -14,7 +15,7 @@ userRouter.post('/signup', async (req, res) => {
     const user = new Users(req.body);
     const record = await user.save(req.body)
     res.status(200).json(record);
-  } catch (error) { res.status(403).send("Error creating User"); }
+  } catch (error) { console.error(error); res.status(403).send("Error creating User"); }
 });
 
 // ==================== ROUTE TO LOGIN TO A CREATED ACCOUNT ==================== //
