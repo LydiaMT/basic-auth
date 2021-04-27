@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 // ==================== TESTING PORTS ==================== //
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = 'mongodb://localhost:27017/auth'
+// const MONGODB_URI = 'mongodb://localhost:27017/auth'
 
 // ==================== START UP SERVER ==================== //
 const options = { 
