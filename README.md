@@ -67,7 +67,7 @@ Use [Code 401 JavaScript Assignment Runner](https://javascript-401.netlify.app/b
 
 ### UML / WRRC
 
-![WRRC](assets/wrrcLab05.jpg)
+![WRRC](wrrcLab05.jpg)
 
 ### Contributions 
 
