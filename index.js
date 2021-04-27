@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 
 // ==================== TESTING PORTS ==================== //
 const PORT = process.env.PORT || 3000;
+const MONGODB_URI = 'mongodb://localhost:27017/auth'
 
 // ==================== START UP SERVER ==================== //
 const options = { 
@@ -15,7 +16,7 @@ const options = {
   useUnifiedTopology: true
 };
 
-mongoose.connect('mongodb://localhost:27017/auth', options)
+mongoose.connect(process.env.MONGODB_URI, options)
   .catch(error => console.error('Count not start server', error.message));
 
 server.start(PORT);
