@@ -1,4 +1,4 @@
-# Lab 05 - 401 JavaScript
+# Lab 06 - 401 JavaScript
 
 # API Server
 
